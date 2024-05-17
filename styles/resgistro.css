@@ -1,0 +1,6 @@
+.container2{
+    display: grid;
+    grid-column: 1fr 2fr 3fr;
+    column-gap: 50px;
+    align-content: center;
+}

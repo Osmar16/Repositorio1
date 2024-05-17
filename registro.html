@@ -4,11 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/resgistro.css">
     <title>Documento</title>
 </head>
 <body>
-    <h1><font color="orange">Registro</font></h1>
-    <a class="btn" href="Proyecto2.html">Regreso</a>
+    <header>
+        <div class="barra-menu">
+            <h1>Sistema de Registro</h1>
+          <nav class="menu">
+
+            <a href="index.html">Home</a>
+            <a href="Project.html">Projects</a>
+            <a href="articles.html">Articles</a>
+            <a href="contacto.html">Contacto</a>
+          </nav>
+        </div>
     
+    
+
+    <div>
+             
+    </div>
+ </header>
+   
+  <main class="container">
+     <h3>Registra un alumno nuevo</h3>
+    
+        <div>
+    
+                <div>
+                  <label>Nombre:</label>
+                  <input type="text" id="txtNombre">
+                 </div>
+
+                   <div>
+                    <label>Edad:</label>
+                    <input type="number" id="txtEdad">
+                   </div>
+
+                      <!-- <button onclick="registrar()">Registrar</button>-->
+     
+                     <div>
+                         <label>Genero:</label>
+                         <input type="text" id="txtgenero">
+                     </div>
+     
+                        <div>
+                          <label>email:</label>
+                          <input type="text" id="txtemail">
+                        </div>
+                           <div>
+                              <!--<label>Facultad:</label>
+                              <input type="text" id="txtfacultad">-->
+                                  
+                                    
+                                    <form>
+                                      <label>Facultad:</label>
+                                            <select input="text" id="txtfacultad">
+                                                     <option></option> 
+                                                     <option>Facultad de Ciencias Administrativas</option>
+                                                     <option>Facultad de Ciencias de la Comunicacion</option>
+                                                     <option>Facultad de Medicina</option>
+                                                     <option>Escuela de Ingenieria</option>
+                                                     <option>Escuela de Ciencias Politicas</option>
+                                            </select>
+                                        </form>
+                                      
+                               
+
+                            </div>
+                                   <div>
+                                     <label>Password:</label>
+                                     <input type="text" id="txtpassword">
+                                   </div>
+                                    <div>
+                                      <label>Materia 1:</label>
+                                      <input type="text" id="txtmateria1">
+                                    </div>
+           <div>
+            <label>Materia 2:</label>
+            <input type="text" id="txtmateria2">
+           </div>
+           <div>
+            <label>Materia 3:</label>
+            <input type="text" id="txtmateria3">
+           </div>            
+        </div> 
+        <button onclick="registrar()">Registrar</button>   
+    </main>
+  
+    <script src="./Scripts/register.js"></script>
+    <script src="./Scripts/display.js"></script>
 </body>
+
 </html>
