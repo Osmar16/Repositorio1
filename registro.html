@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/resgistro.css">
+    <link rel="stylesheet" href="./styles/display.css">
     <title>Documento</title>
 </head>
 <body>
@@ -23,10 +24,10 @@
     
     
 
-    <div>
+   <!--  <div>
              
-    </div>
- </header>
+     </div> -->
+    </header>
    
   <main class="container">
      <h3>Registra un alumno nuevo</h3>
@@ -34,68 +35,75 @@
         <div>
     
                 <div>
-                  <label>Nombre:</label>
-                  <input type="text" id="txtNombre">
-                 </div>
+                 <label>Nombre:</label>
+                 <input type="text" id="txtNombre">
+                </div>
 
-                   <div>
-                    <label>Edad:</label>
-                    <input type="number" id="txtEdad">
-                   </div>
+                <div>
+                 <label>Edad:</label>
+                 <input type="number" id="txtEdad">
+                </div>
 
-                      <!-- <button onclick="registrar()">Registrar</button>-->
+                <div>
+                 <label>Genero:</label>
+                 <input type="text" id="txtgenero">
+                </div>
      
-                     <div>
-                         <label>Genero:</label>
-                         <input type="text" id="txtgenero">
-                     </div>
-     
-                        <div>
-                          <label>email:</label>
-                          <input type="text" id="txtemail">
-                        </div>
-                           <div>
-                              <!--<label>Facultad:</label>
-                              <input type="text" id="txtfacultad">-->
-                                  
-                                    
-                                    <form>
-                                      <label>Facultad:</label>
-                                            <select input="text" id="txtfacultad">
-                                                     <option></option> 
-                                                     <option>Facultad de Ciencias Administrativas</option>
-                                                     <option>Facultad de Ciencias de la Comunicacion</option>
-                                                     <option>Facultad de Medicina</option>
-                                                     <option>Escuela de Ingenieria</option>
-                                                     <option>Escuela de Ciencias Politicas</option>
-                                            </select>
-                                        </form>
+                <div>
+                 <label>email:</label>
+                 <input type="text" id="txtemail">
+                </div>
+                           
+                <div>                                    
+                 <form>
+                  <label>Facultad:</label>
+                  <select input="text" id="txtfacultad">
+                   <option></option> 
+                   <option>Facultad de Ciencias Administrativas</option>
+                   <option>Facultad de Ciencias de la Comunicacion</option>
+                   <option>Facultad de Medicina</option>
+                   <option>Escuela de Ingenieria</option>
+                   <option>Escuela de Ciencias Politicas</option>
+                  </select>
+                 </form>
                                       
-                               
+                 </div>
+                
+                <div>
+                 <label>Password:</label>
+                 <input type="text" id="txtpassword">
+                </div>
+                 
+                <div>
+                 <label>Materia 1:</label>
+                 <input type="text" id="txtmateria1">
+                </div>
 
-                            </div>
-                                   <div>
-                                     <label>Password:</label>
-                                     <input type="text" id="txtpassword">
-                                   </div>
-                                    <div>
-                                      <label>Materia 1:</label>
-                                      <input type="text" id="txtmateria1">
-                                    </div>
-           <div>
-            <label>Materia 2:</label>
-            <input type="text" id="txtmateria2">
-           </div>
-           <div>
-            <label>Materia 3:</label>
-            <input type="text" id="txtmateria3">
-           </div>            
+                <div>
+                 <label>Materia 2:</label>
+                 <input type="text" id="txtmateria2">
+                </div>
+
+                <div>
+                 <label>Materia 3:</label>
+                 <input type="text" id="txtmateria3">
+                </div>            
         </div> 
         <button onclick="registrar()">Registrar</button>   
-    </main>
+        
+        
+      </div>
+      <h3>Estudiantes Registrados</h3>
+      <div id="studentList">
   
+      </div>
+    </main>
+    
+    
+    <script src="https://code.jquery.com/jquery"></script>
     <script src="./Scripts/register.js"></script>
     <script src="./Scripts/display.js"></script>
+    
 </body>
 
 </html>

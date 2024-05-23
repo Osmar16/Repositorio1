@@ -85,19 +85,55 @@ function registrar(){
     let nuevoAlumno = new Student(inputNombre, inputEdad, inputgenero, inputemail, inputfacultad, inputpassword, inputmateria1, inputmateria2, inputmateria3);
     if(isValid(nuevoAlumno)==true){
     students.push(nuevoAlumno);
-    console.log(students);
+    // console.log(students);
+    displayCards();
     alert("Informacion Capturada");
     limpiar_campos();
     
     }else{
-        alert("Por favor completa los campos");
+        
+       alert("Por favor completa los campos");
+        
+
     }
     
 }
 
+//function insertToDataBase(newStudent){
+  // $.ajax({ 
+    //url:"./app/register.php",
+    //method:"POST",
+    //data:{
+      //  name:newStudent.name,
+        //age:newStudent.age
+    //},
+    //dataType:"json",(){
+    //success:function(response){    
+      //  console.log(response);
+    //},
+    //error:function(xhr,status,error){
+      //  console.log("Error de conexion");
+        //console.error(Error);
+    //}    
+
+
+    //}
+
+    
+
+    //});
+
+//}
+
+
+
+
+
 function init(){
     let student1 = new Student("Samuel",99);
-    console.log(student1);
+    //console.log(student1);
+   students.push(student1);
+    displayCards();
 }
 
 window.onload=init;//espera a renderizar el HTML

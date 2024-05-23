@@ -1,0 +1,15 @@
+#studentList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin:20px 0;
+} 
+.student{
+    border:1px solid #f10606;
+    border-radius: 10px;
+    padding: 10px;
+}
+h3{
+    margin: 20px;
+}
