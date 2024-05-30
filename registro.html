@@ -14,19 +14,14 @@
         <div class="barra-menu">
             <h1>Sistema de Registro</h1>
           <nav class="menu">
-
             <a href="index.html">Home</a>
             <a href="Project.html">Projects</a>
             <a href="articles.html">Articles</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="facultades.html">Contacto</a>
+            <a href="usuarios.html">Estudiantes Capturados</a>
           </nav>
         </div>
-    
-    
 
-   <!--  <div>
-             
-     </div> -->
     </header>
    
   <main class="container">
@@ -44,10 +39,17 @@
                  <input type="number" id="txtEdad">
                 </div>
 
-                <div>
-                 <label>Genero:</label>
-                 <input type="text" id="txtgenero">
+                <div>                                    
+                  <form>
+                    <label>Genero:</label>
+                    <select input="text" id="txtgenero">
+                     <option></option> 
+                     <option>Masculino</option>
+                     <option>Femenino</option>
+                    </select>
+                   </form>
                 </div>
+                
      
                 <div>
                  <label>email:</label>
@@ -55,7 +57,7 @@
                 </div>
                            
                 <div>                                    
-                 <form>
+                <form>
                   <label>Facultad:</label>
                   <select input="text" id="txtfacultad">
                    <option></option> 
@@ -71,39 +73,56 @@
                 
                 <div>
                  <label>Password:</label>
-                 <input type="text" id="txtpassword">
+                 <input type="password" id="txtpassword">
                 </div>
                  
                 <div>
                  <label>Materia 1:</label>
-                 <input type="text" id="txtmateria1">
+                 <input type="number" id="txtmateria1">
                 </div>
 
                 <div>
                  <label>Materia 2:</label>
-                 <input type="text" id="txtmateria2">
+                 <input type="number" id="txtmateria2">
                 </div>
 
                 <div>
                  <label>Materia 3:</label>
-                 <input type="text" id="txtmateria3">
-                </div>            
+                 <input type="number" id="txtmateria3">
+                </div>  
+                
+                <div>
+                  <label>Nota:</label>
+                  <input type="text" id="txtnota">
+                 </div>
+
+                 <div>
+                  <label>Calcular promedio</label>
+                  <button onclick="promediar()">Sacar promedio</button>
+                 </div>
+                 
+                 <div>
+                  <label>Promedio:</label>
+                 <input type="text" id="txtpromedio" size="2" readonly>
+                 </div>
+                 
         </div> 
         <button onclick="registrar()">Registrar</button>   
         
         
-      </div>
+      <!--</div>
       <h3>Estudiantes Registrados</h3>
-      <div id="studentList">
-  
+      <div id="studentList"> -->
+
       </div>
     </main>
     
     
-    <script src="https://code.jquery.com/jquery"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="./Scripts/register.js"></script>
     <script src="./Scripts/display.js"></script>
     
+
 </body>
 
 </html>

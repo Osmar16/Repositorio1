@@ -70,3 +70,24 @@ label{
       margin-left: 50px;
           margin:5px auto;
   }
+
+ /* de aqui en adelante nuevos css para darle forma a la tabla donde se presentan los datos */
+
+  table, th, td {
+    border:1px solid black;
+  }
+
+  #student-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#student-table th, #student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#student-table th {
+    background-color: #f2f2f2;
+}

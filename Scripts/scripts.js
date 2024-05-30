@@ -48,7 +48,7 @@ console.log(student3,student4,student5);
 //function
 
 function saludar(){
-    alert("Welcome ");
+    alert("Gracias por iniciar la captura");
 }
 
 
@@ -70,3 +70,5 @@ function calculartaxes(ingresos,egresos){
    
 calculartaxes(sumar(100,200),sumar(10,8));
 calculartaxes(sumar(200,300),sumar(50,30));
+
+
