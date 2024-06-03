@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/resgistro.css">
+    <link rel="stylesheet" href="./styles/display.css">
+    <title>Buscar y Eliminar Estudiantes</title>
+</head>
+<body>
+    <header>
+        <div class="barra-menu">
+            <h1>Sistema de Registro</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="Project.html">Projects</a>
+                <a href="facultades.html">Facultades</a>
+                <a href="registro.html">Ir a Registro de Estudiantes</a>
+                <a href="usuarios.html">Estudiantes Capturados</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h4>Buscar Estudiante</h4>
+        <div>
+            <label>Nombre:</label>
+            <input type="text" id="txtNombre">
+            <button id="buscar-btn">Buscar</button>
+        </div>
+        <h1>Resultados de la Búsqueda</h1>
+        <div id="student-container">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Email</th>
+                        <th>Facultad</th>
+                        <th>Materia 1</th>
+                        <th>Materia 2</th>
+                        <th>Materia 3</th>
+                        <th>Nota</th>
+                        <th>Promedio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body">
+                    <!-- Aquí se mostrarán los resultados de la búsqueda -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./Scripts/buscar_eliminar_estudiantes.js"></script>
+</body>
+</html>
